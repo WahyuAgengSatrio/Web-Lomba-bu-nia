@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portofolio</title>
+    <link href="style.css" rel="stylesheet" >
+    <link href="Aos/aos.css" rel="stylesheet"> 
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo" data-aos="fade-right" data-aos-duration="1500">
+                Konnichiwa
+            </div>
+
+            <ul data-aos="fade-left" data-aos-duration="1500">
+                <li><a href="#about">about</a></li>
+                <li><a href="#skill">skills</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Artikel 1 -->
+        <article id="about" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="content1">
+                <h3>Hi, I'm a </h3>
+                <h2>Wahyu Ageng Satrio</h2>
+                <p>Welcome to My biodata</p>
+                <button id="Download">
+                    <a href="Img/th (1).jpg">Download CV</a>
+                </button>             
+            </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article id="skill" data-aos="fade-up" data-aos-duration="1500">
+            <h2>My Skills</h2>
+            <div class="content2">
+
+            <!-- Skill 1 -->      
+            <section class="card">
+                <img class="card-image" src="Img/th (1).jpg" alt="gambar coding" width="20%">
+                <h3>Pemrograman</h3>
+            </section>
+
+            <!-- Skill 2 -->
+            <section class="card">
+                <img class="card-image" src="img/th (2).jpg" alt="gambar coding" width="20%">
+                <h3>Jaringan</h3>
+            </section>
+
+            <!-- Skill 3 -->
+            <section class="card">
+                <img class="card-image" src="img/th.jpg" alt="gambar coding" width="20%">
+                <h3>Desain</h3>
+            </section>
+
+            </div>
+        </article>
+
+    <!-- Article 3 -->
+    <article id="contact" data-aos="fade-up" data-aos-duration="1500">
+            <form>
+                <fieldset class="video-background">
+                    <video autoplay loop muted>
+                        <source src ="silver-wolf-and-kafka-honkai-star-rail-moewalls-com.mp4" type="video/mp4">
+                    </video>
+                    <h2>Kontak Saya</h2>
+                    <p>Silahkan Hubungi Saya
+                    </p>
+
+                    <label for="nama">Nama :</label><br>
+                    <input type="text" id="nama"><br>
+                    
+                    <label for="email">email :</label><br>
+                    <input type="email" id="email"><br>
+
+                    <label for="pesan">pesan :</label><br>
+                    <textarea id="pesan" cols="30" rows="10"></textarea> 
+                    <br>
+
+                    <button id="myButton">Kirim</button>
+                </fieldset>
+            </form>
+    </article>
+
+    </main>
+
+        <footer>
+            <p>Pemrograman Web &copy;Tiyo</p>
+        </footer>
+
+        <script src="Js/script.js"></script>
+        <script src="Js/js.js"></script>
+        <script>AOS.init();</script>
+        <script>
+            const myButton = document.getElementById('myButton');
+            myButton.addEventListener('click', () => {
+                alert('Berhasil');
+            });
+        </script>
+
+</body>
+
+</html>
